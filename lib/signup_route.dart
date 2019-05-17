@@ -13,51 +13,44 @@ class _signup_route extends State<Signup> {
   Widget build(BuildContext context) {
     // TODO: implement build
     // ignore: strong_mode_invalid_cast_new_expr
-    final firstName=Padding(padding:const EdgeInsets.all(2.0),
-
-    child: TextField(
+    final firstName = Padding(
+      padding: const EdgeInsets.all(2.0),
+      child: TextField(
         autofocus: false,
-    keyboardType: TextInputType.text,
-      decoration: InputDecoration(
-        prefixIcon: Icon(Icons.person),
-        labelText: "FirstNAme",
-      /*  border: OutlineInputBorder(
+        keyboardType: TextInputType.text,
+        decoration: InputDecoration(
+          prefixIcon: Icon(Icons.person),
+          labelText: "FirstNAme",
+          /*  border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(4.0),
       ),*/
-
+        ),
       ),
-    ),
-
-
     );
 
-    final lastname=Padding(padding: const EdgeInsets.all(2.0),
-    child: TextField(
-      autofocus: false,
-      decoration:InputDecoration(
-          icon: Icon(Icons.person),
-        labelText: "Lastname",
+    final lastname = Padding(
+      padding: const EdgeInsets.all(2.0),
+      child: TextField(
+        autofocus: false,
+        decoration: InputDecoration(
+            icon: Icon(Icons.person),
+            labelText: "Lastname",
             border: OutlineInputBorder(
-          borderRadius: BorderRadius.circular(3.0),
-      )
-      ) ,
-      
-    ),
-    
-    
+              borderRadius: BorderRadius.circular(3.0),
+            )),
+      ),
     );
-    
-    
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Sign_Demo"),
         centerTitle: true,
       ),
-      body:Center(
+      body: Center(
         child: ListView(
-          children: [firstName,lastname],
+          children: [firstName, lastname],
         ),
-      ) ,
+      ),
     );
   }
 }

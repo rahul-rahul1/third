@@ -1,4 +1,6 @@
 import 'package:flutter/material.dart';
+import 'package:third/pages/home_page.dart';
+import 'package:third/profile_route.dart';
 import 'package:third/signup_route.dart';
 
 
@@ -38,16 +40,36 @@ class _LoginRouteState extends State<LoginRoute> {
             )),
       ),
     );
-
+    new Container(
+      padding: const EdgeInsets.all(8.0),
+      alignment: Alignment.center,
+      height: 60.0,
+      decoration: new BoxDecoration(
+          color: Colors.blueGrey,
+          border: new Border.all(
+              color: Colors.black54,
+              width: 4.0
+          ),
+          borderRadius: new BorderRadius.circular(12.0)
+      ),
+      child: new TextFormField(
+        decoration: null,
+      ),
+    );
     final email = TextFormField(
 
       keyboardType: TextInputType.emailAddress,
       autofocus: false,
       initialValue: 'sathyabaman@gmail.com',
-      style: new TextStyle(fontWeight: FontWeight.normal, color: Colors.white),
+      style: new TextStyle(fontWeight: FontWeight.normal, color: Colors.black),
+
       decoration: InputDecoration(
+
+
         hintText: 'Email',
-        contentPadding: new EdgeInsets.symmetric(vertical: 25.0, horizontal: 10.0),
+        contentPadding: new EdgeInsets.all(2.0),
+
+      //  contentPadding: new EdgeInsets.symmetric(vertical: 10.0, horizontal: 10.0),
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(32.0)),
       ),
     );
@@ -80,7 +102,11 @@ class _LoginRouteState extends State<LoginRoute> {
           color: Colors.lime,
           onPressed: () {
             print('signUPButton');
+            //Navigator.push(context, MaterialPageRoute(builder: (context) =>Profile()));
             //Navigator.push(context, MaterialPageRoute(builder: (context) => HomeRoute()));
+         //   HomePage
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>HomePage()));
+
           },
         ),
       ),
