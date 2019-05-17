@@ -19,6 +19,7 @@ class _signup_route extends State<Signup> {
         autofocus: false,
     keyboardType: TextInputType.text,
       decoration: InputDecoration(
+        prefixIcon: Icon(Icons.person),
         labelText: "FirstNAme",
       /*  border: OutlineInputBorder(
         borderRadius: BorderRadius.circular(4.0),
@@ -34,7 +35,7 @@ class _signup_route extends State<Signup> {
     child: TextField(
       autofocus: false,
       decoration:InputDecoration(
-
+          icon: Icon(Icons.person),
         labelText: "Lastname",
             border: OutlineInputBorder(
           borderRadius: BorderRadius.circular(3.0),

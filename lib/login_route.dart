@@ -26,7 +26,12 @@ class _LoginRouteState extends State<LoginRoute> {
       child: TextField(
 
         decoration: InputDecoration(
-
+          //add icon outside input field
+            icon: Icon(Icons.person),
+            //add icon to the beginning of text field
+            prefixIcon: Icon(Icons.person),
+            //can also add icon to the end of the textfiled
+            suffixIcon: Icon(Icons.remove_red_eye),
             labelText: "Username",
             border: OutlineInputBorder(
               borderRadius: BorderRadius.circular(4.0),
