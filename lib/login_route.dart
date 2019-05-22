@@ -131,6 +131,27 @@ class _LoginRouteState extends State<LoginRoute> {
         ),
       ),
     );
+    final proflie = Padding(
+      padding: const EdgeInsets.all(16.0),
+      child: Material(
+        elevation: 5.0,
+        shadowColor: Colors.lime.shade100,
+        child: MaterialButton(
+          minWidth: 200.0,
+          height: 48.0,
+          child: Text(
+            "Profile",
+            style: TextStyle(color: Colors.white, fontSize: 16.0),
+          ),
+          color: Colors.lime,
+          onPressed: () {
+            print('proflie');
+            Navigator.push(context, MaterialPageRoute(builder: (context) => Profile()));
+          },
+        ),
+      ),
+    );
+
 
     return Scaffold(
       appBar: AppBar(
@@ -140,7 +161,7 @@ class _LoginRouteState extends State<LoginRoute> {
       backgroundColor: Colors.white,
       body: Center(
         child: ListView(
-          children: [/*icon,*/ username,email, password, submitButton,signUPButton],
+          children: [/*icon,*/ username,email, password, submitButton,signUPButton,proflie],
         ),
       ),
     );

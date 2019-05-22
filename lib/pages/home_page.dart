@@ -81,3 +81,7 @@ class HomePageState extends State<HomePage> {
   }
 }
 //https://medium.com/@kashifmin/flutter-setting-up-a-navigation-drawer-with-multiple-fragments-widgets-1914fda3c8a8
+
+
+//Easy Solutuion
+//https://proandroiddev.com/flutter-creating-drawers-e31414f7d71a

@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:third/login_route.dart';
 
+import 'fragments/loginValidation.dart';
+import 'fragments/signuUpwithValidations.dart';
+
 
 void main() {
   runApp(new MyApp());
@@ -14,9 +17,13 @@ class MyApp extends StatelessWidget {
       initialRoute: '/',
       routes: {
 
-    '/': (context) => LoginRoute(),
+   '/': (context) => SignupWithValidation(),
+       // '/': (context) => LoginValidation(),
+   // SignupWithValidation
 
-        //"/home": (context) => HomeRoute(),
+    //'/': (context) => SignupWithValidation(),
+
+    //"/home": (context) => HomeRoute(),
       },
 
     );
