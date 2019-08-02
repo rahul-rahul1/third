@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "452167220329",
+    "firebase_url": "https://third-c992a.firebaseio.com",
+    "project_id": "third-c992a",
+    "storage_bucket": "third-c992a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:452167220329:android:4998a2a88171f661",
+        "android_client_info": {
+          "package_name": "com.signity.third"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "452167220329-96kpsho6qlbcge0tgakb73u4ec9ffbu0.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCoRNyQqWcTvyG_-4pmnMmAUgR4zd0K858"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "452167220329-96kpsho6qlbcge0tgakb73u4ec9ffbu0.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

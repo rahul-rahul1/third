@@ -18,7 +18,6 @@ class _ProfileRoute extends State<Profile>{
   Widget build(BuildContext context) {
     // TODO: implement build
 
-
     final email = TextFormField(
 
       keyboardType: TextInputType.text,
@@ -26,8 +25,6 @@ class _ProfileRoute extends State<Profile>{
       style: new TextStyle(fontWeight: FontWeight.normal, color: Colors.black),
 
       decoration: InputDecoration(
-
-
         hintText: 'Name',
         contentPadding: new EdgeInsets.symmetric(vertical: 5.0, horizontal: 5.0),
 

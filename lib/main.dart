@@ -42,7 +42,6 @@ class _MyAppState extends State<MyApp> {
 
             fit: BoxFit.fitHeight,
             repeat: ImageRepeat.noRepeat,
-            width: 170.0,
           ),
          /* Divider(
             height: 105.2,

@@ -31,6 +31,7 @@ class _HomeState extends State<FirstFragment> {
 
   void listenForBeers() async {
     final Stream<Beer> stream = await getBeers();
+    print('@@listenForBeers'+stream.toString());
     stream.listen((Beer beer) =>
         setState(() =>  _beers.add(beer))
     );

@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:third/map/map_activity.dart';
 
 class LoginValidation extends StatefulWidget {
   @override
@@ -77,6 +78,17 @@ class _loginValidation extends State<LoginValidation> {
           splashColor: Colors.blueGrey,
           onPressed: () {
             print('Filter button');
+          },
+        ),
+        new RaisedButton(
+          child: const Text('Connect with Map'),
+          color: Theme.of(context).accentColor,
+          elevation: 4.0,
+          splashColor: Colors.blueGrey,
+          onPressed: () {
+            print('@@@@MAp');
+            Navigator.push(context, MaterialPageRoute(builder: (context) =>MapActivity()));
+
           },
         ),
       ],

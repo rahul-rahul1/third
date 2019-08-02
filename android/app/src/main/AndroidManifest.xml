@@ -1,6 +1,6 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.signity.third">
-
+<uses-permission android:name="android.permission.INTERNET"></uses-permission>
     <!-- io.flutter.app.FlutterApplication is an android.app.Application that
          calls FlutterMain.startInitialization(this); in its onCreate method.
          In most cases you can leave this as-is, but you if you want to provide
@@ -10,6 +10,13 @@
         android:name="io.flutter.app.FlutterApplication"
         android:label="third"
         android:icon="@mipmap/ic_launcher">
+
+
+        <!-- Add the following entry, with your API key -->
+        <meta-data android:name="com.google.android.geo.API_KEY"
+            android:value="AIzaSyAvuYjSuzhpC7lrqo52hEzujcLNO1e_j3U"/>
+
+
         <activity
             android:name=".MainActivity"
             android:launchMode="singleTop"
